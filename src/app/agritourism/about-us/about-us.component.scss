@@ -1,0 +1,36 @@
+@import "../../../scss/variables.scss";
+
+/* INTRO SECTION */
+
+.intro .position-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 45%;
+
+  @media (max-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.intro .container {
+  margin-top: 270px;
+  height: 60vh;
+}
+
+.intro h1 {
+  max-width: 610px;
+  margin-bottom: 20px;
+}
+
+.intro .lead-lg {
+  max-width: 660px;
+  margin-bottom: 40px;
+}
+
+/* OFFER SECTION */
+
+.offer {
+  margin-bottom: 80px;
+}

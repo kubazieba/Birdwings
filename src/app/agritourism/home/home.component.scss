@@ -1,0 +1,117 @@
+@import "../../../scss/variables.scss";
+
+/* INTRO SECTION */
+
+.intro .position-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 45%;
+
+  @media (max-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.intro .container {
+  margin-top: 270px;
+  height: 60vh;
+}
+
+.intro h1 {
+  max-width: 610px;
+  margin-bottom: 20px;
+}
+
+.intro .lead-lg {
+  max-width: 705px;
+  margin-bottom: 40px;
+}
+
+/* HERO SECTION */
+
+.hero h2 {
+  max-width: 730px;
+  margin-bottom: 50px;
+}
+
+.hero .boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 100px;
+
+  @media (min-width: $bp-desktop) {
+    flex-direction: row;
+  }
+}
+
+.hero .box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.hero .box img:hover {
+  filter: blur(1px);
+  cursor: pointer;
+}
+
+.intro .btn:hover {
+  outline: 2px solid $purple-primary;
+}
+
+/* INFO SECTION */
+
+.info {
+  background: $purple-primary;
+}
+
+.info .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info h2 {
+  max-width: 730px;
+  color: $white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.info .btn {
+  margin-bottom: 60px;
+}
+
+.info .btn:hover {
+  outline: 2px solid $white;
+  background: $purple-primary;
+  color: $white;
+}
+
+.info .ticks {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.info .tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.info .tick img {
+  min-width: 16px;
+  min-height: 16px;
+  max-width: 16px;
+  max-height: 16px;
+}

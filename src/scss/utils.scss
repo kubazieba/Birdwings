@@ -1,0 +1,221 @@
+@import 'variables.scss';
+
+/* LAYOUT */
+
+.container {
+  max-width: 1480px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* HEADINGS */
+
+h1, h2, h3, h4 {
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 40px;
+
+  @media (min-width: $bp-desktop) {
+    font-size: 62px;
+    line-height: 78px;
+  }
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 32px;
+
+  @media (min-width: $bp-desktop) {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: $bp-desktop) {
+    font-size: 38px;
+    line-height: 52px;
+  }
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+/* SUBTITLES */
+
+.subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+/* LEADS */
+
+.lead-lg, .lead-md, .lead-sm {
+  font-weight: 500;
+}
+
+.lead-lg {
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $bp-desktop) {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+.lead-md {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.lead-sm {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* TEXT */
+
+.text-lg {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* LABELS */
+
+.label-lg, .label-md, .label-sm {
+  font-weight: 600;
+}
+
+.label-lg {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.label-md {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.label-sm {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  padding: 16px 64px;
+  cursor: pointer;
+  background-color: $purple-primary;
+  color: $white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 30px;
+  transition: all 0.3s ease-in;
+  font-weight: 700;
+
+  &:hover {
+    background: $white;
+    color: $purple-primary;
+  }
+
+  &--light, &--lighter, &--white {
+    color: $purple-primary;
+  }
+
+  &--light {
+    background: $purple-light;
+  }
+
+  &--lighter {
+    background-color: $purple-lighter;
+  }
+
+  &--white {
+    background: $white;
+  }
+
+  &--md {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 26px;
+  }
+
+  &--sm {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 6px 12px;
+  }
+}
+
+/* MARGINS AND PADDINGS */
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+/* UTILS */
+
+.disabled-scroll {
+  overflow: hidden;
+}

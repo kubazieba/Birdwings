@@ -1,5 +1,27 @@
 @import "../../../scss/variables.scss";
 
+@media (max-width: $bp-800) {
+  .offer {
+    margin-bottom: 0;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .photo {
+    order: 1;
+  }
+
+  .lead-md {
+    margin-bottom: 10px;
+  }
+
+  .mobile {
+    order: 3;
+  }
+}
+
 /* INTRO SECTION */
 
 .intro .position-img {
@@ -16,7 +38,7 @@
 
 .intro .container {
   margin-top: 270px;
-  height: 60vh;
+  height: 50vh;
 }
 
 .intro h1 {

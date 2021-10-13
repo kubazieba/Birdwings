@@ -11,12 +11,14 @@ import {AdminModule} from "./admin/admin.module";
 import {ClientModule} from "./client/client.module";
 import { HomeComponent } from './agritourism/home/home.component';
 import { AboutUsComponent } from './agritourism/about-us/about-us.component';
+import { FaqComponent } from './agritourism/faq/faq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

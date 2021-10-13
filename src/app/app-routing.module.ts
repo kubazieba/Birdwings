@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./agritourism/home/home.component";
 import {AboutUsComponent} from "./agritourism/about-us/about-us.component";
+import {FaqComponent} from "./agritourism/faq/faq.component";
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'about-us',
     component: AboutUsComponent
+  },
+  {
+    path: 'faq',
+    component: FaqComponent
   },
   { path: '**',
     redirectTo: '/',

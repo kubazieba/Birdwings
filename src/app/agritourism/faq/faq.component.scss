@@ -1,0 +1,30 @@
+@import "../../../scss/variables.scss";
+
+.container {
+  margin-top: 180px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accordion-button {
+  background: $purple-primary;
+  color: $white;
+  font-size: 18px;
+}
+
+.accordion-body {
+  background: $purple-lighter;
+  color: $purple-primary;
+}
+
+.lead-md a {
+  color: $purple-light;
+  transition: all 0.3s ease;
+}
+
+.lead-md a:hover {
+  color: $purple-primary;
+}
